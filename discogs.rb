@@ -3,8 +3,8 @@ class Discogs < Formula
 
   desc "Discogs Data Processor CLI"
   homepage "https://github.com/ofurkancoban/DiscogsCLI"
-  url "https://github.com/ofurkancoban/DiscogsCLI/archive/refs/tags/v1.5.0.tar.gz"
-  sha256 "1b499bf450f6f7362cbc55c5552f3cb7cac84b9b88926103c088c0f53ef677af"
+  url "https://github.com/ofurkancoban/DiscogsCLI/archive/refs/tags/v1.5.8.tar.gz"
+  sha256 "d05345489682bcf87b8904fc0502156d9454a642a2fbec7ad8c0c9f20771854c"
   license "MIT"
 
   depends_on "python@3.11"
