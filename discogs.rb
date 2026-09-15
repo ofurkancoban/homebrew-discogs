@@ -10,11 +10,10 @@ class Discogs < Formula
   depends_on "python@3.11"
 
   def install
-    system "python3", "-m", "venv", "venv"
-    system "./venv/bin/pip", "install", "."
-
-
-    bin.install_symlink buildpath/"venv/bin/discogs"
+    venv = libexec
+    system Formula["python@3.11"].opt_bin/"python3.11", "-m", "venv", venv
+    system venv/"bin/pip", "install", "."
+    bin.install_symlink venv/"bin/discogs"
   end
 
   test do
